@@ -1,19 +1,32 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: url('./flappybirdbg.png') center/cover no-repeat; /* Replace with the path to your background image */
+    background: url('./flappybirdbg.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #game-container {
+    max-width: 90%; /* Set a maximum width for the game container */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
 canvas {
     display: block;
+    max-width: 100%; /* Ensure canvas does not exceed the maximum width of the game container */
+}
+
+#game-over-message {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.hidden {
+    display: none;
 }
