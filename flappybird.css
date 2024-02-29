@@ -1,18 +1,9 @@
 body {
     margin: 0;
-    overflow: hidden; /* Prevent scrolling */
-    background-image: url('./background.jpg'); /* Replace with the path to your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    background: url('./flappybirdbg.png') center/cover no-repeat; /* Replace with the path to your background image */
 }
 
 canvas {
     display: block;
-}
-
-
-#board {
-    /* background-color: skyblue; */
-    background-image: url("./flappybirdbg.png");
 }
