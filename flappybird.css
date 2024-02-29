@@ -1,7 +1,16 @@
 body {
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-image: url('./background.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+canvas {
+    display: block;
+}
+
 
 #board {
     /* background-color: skyblue; */
